@@ -1,0 +1,96 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01OWJB2J9FQ4X1EXyMU8eU3BXP0QYdRncP4",
+    "name": "dddddmmm",
+    "title": "dddddmmm",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": true,
+      "description": "description ",
+      "display_name": "dddddmmm",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01OWJUFA3N1666VhCokG43VduZN5BfAYY6c",
+        "name": "HTTP Request",
+        "title": "HTTP Request",
+        "type": "web-service.http_request",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "allow_auto_redirect": true,
+          "continue_on_error_status_code": false,
+          "continue_on_failure": false,
+          "display_name": "HTTP Request",
+          "method": "GET",
+          "relative_url": "/",
+          "runtime_user": {
+            "target_default": true
+          },
+          "skip_execution": false,
+          "target": {
+            "override_workflow_target": true,
+            "target_id": "definition_target_01OWJVYRFZ0F91EfmhLE1412OkLGZn8jDcR"
+          }
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf",
+      "category_01OWJ79G28UVW0RzWb9yfleiNGkY2xyYT1W",
+      "category_01OWKHRXBCE2E7iBy4SIiSX3llflPnrNu6D"
+    ]
+  },
+  "categories": {
+    "category_01OWJ79G28UVW0RzWb9yfleiNGkY2xyYT1W": {
+      "unique_name": "category_01OWJ79G28UVW0RzWb9yfleiNGkY2xyYT1W",
+      "name": "test",
+      "title": "test",
+      "type": "basic.category",
+      "base_type": "category",
+      "description": "ddd",
+      "category_type": "custom",
+      "object_type": "category"
+    },
+    "category_01OWKHRXBCE2E7iBy4SIiSX3llflPnrNu6D": {
+      "unique_name": "category_01OWKHRXBCE2E7iBy4SIiSX3llflPnrNu6D",
+      "name": "test-tag",
+      "title": "test-tag",
+      "type": "basic.category",
+      "base_type": "category",
+      "category_type": "custom",
+      "object_type": "category"
+    }
+  },
+  "targets": {
+    "definition_target_01OWJVYRFZ0F91EfmhLE1412OkLGZn8jDcR": {
+      "unique_name": "definition_target_01OWJVYRFZ0F91EfmhLE1412OkLGZn8jDcR",
+      "name": "jjj",
+      "title": "jjj",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "disable_certificate_validation": false,
+        "display_name": "jjj",
+        "host": "httpbin.org",
+        "ignore_proxy": false,
+        "no_runtime_user": true,
+        "protocol": "http"
+      }
+    }
+  }
+}
