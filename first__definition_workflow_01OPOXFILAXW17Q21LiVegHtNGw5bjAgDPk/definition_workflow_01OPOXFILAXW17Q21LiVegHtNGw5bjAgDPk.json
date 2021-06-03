@@ -1,0 +1,56 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01OPOXFILAXW17Q21LiVegHtNGw5bjAgDPk",
+    "name": "test-2",
+    "title": "test-2",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "display_name": "test-2",
+      "runtime_user": {
+        "target_default": true
+      },
+      "target": {
+        "no_target": true
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01OPOXJLMY9JJ4Ev43v2HyImndfsf693xJc",
+        "name": "Sleep",
+        "title": "Sleep",
+        "type": "core.sleep",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Sleep",
+          "skip_execution": false,
+          "sleep_interval": 3
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_01FzsThUQ3yXAswxOItEqLAIiGLEPlIt0",
+      "category_01OWJ79G28UVW0RzWb9yfleiNGkY2xyYT1W"
+    ]
+  },
+  "categories": {
+    "category_01OWJ79G28UVW0RzWb9yfleiNGkY2xyYT1W": {
+      "unique_name": "category_01OWJ79G28UVW0RzWb9yfleiNGkY2xyYT1W",
+      "name": "test",
+      "title": "test",
+      "type": "basic.category",
+      "base_type": "category",
+      "description": "ddd",
+      "category_type": "custom",
+      "object_type": "category"
+    }
+  }
+}
